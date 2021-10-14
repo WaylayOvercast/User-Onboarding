@@ -1,0 +1,43 @@
+.App {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content:flex-end ;
+}
+
+.main-card{
+  justify-content: center;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: 50%;
+  background-color: rgb(158, 25, 25);
+  border: .7rem solid rgba(59, 0, 0, 0.171);
+  overflow: hidden;
+}
+.sub-card{
+  height: 80%;
+  width: 60%;
+  justify-content: center;
+  display: flex;
+  align-self: center;
+  background-color: rgb(122, 28, 28);
+}
+.f1{
+  
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+}
+.in{
+  margin:2%; 
+}
+.sub{
+  align-self: center;
+  width: 20%;
+}
