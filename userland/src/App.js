@@ -39,14 +39,16 @@ function App() {
     })}
   
   const postValues = (newVal) =>{
-    axios.post('https://reqres.in/api/users', newVal)
+    axios.post('https://reqres.in/api/users', [newVal])
     .then(res =>{
       setValues([res.data,...values])
+      console.log(res)
     })
     .catch(valueError => console.error(valueError)
     )
     .finally(()=> {
       setForm(formDefault)
+      getValues()
     })
   }
   
@@ -78,6 +80,7 @@ function App() {
   useEffect(()=>{
     getValues()
   },[])
+
   useEffect(()=>{
    Schema.isValid(form).then(valid =>
      setDisable(!valid)) 
@@ -86,7 +89,7 @@ function App() {
   return (
     <Router>
     <div className="App">
-      <Route>
+      <Route path='/'>
       <Form
        values={form} 
        update={update}

@@ -17,7 +17,7 @@ const Schema = yup.object().shape({
     .string()
     .oneOf(['dew','pepper'], 'you must choose a soda'),
     terms: yup.boolean()
-    
+    .oneOf([true], 'Field must be checked')
 });
 
 export default Schema

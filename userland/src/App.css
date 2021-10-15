@@ -35,9 +35,22 @@
   width: 70%;
 }
 .in{
+  background-color: rgb(87, 16, 16);
   margin:2%; 
+  color: rgb(189, 189, 189);
+  font-weight: 800;
 }
 .sub{
   align-self: center;
   width: 20%;
+}
+.l{
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.e{
+  padding: 1%;
+  font-size: 1.35rem;
+  color: rgb(43, 8, 8);
+  font-weight: 900;
 }
